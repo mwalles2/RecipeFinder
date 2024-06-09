@@ -31,7 +31,6 @@ struct DetailView: View {
 				} label: {
 					Text("Retry")
 				}
-
 			}
 		} else {
 			LoadingView().onAppear {
@@ -50,7 +49,6 @@ struct DetailView: View {
 				errorMessage = error.localizedDescription
 			}
 		}
-
 	}
 }
 

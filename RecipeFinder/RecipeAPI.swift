@@ -16,7 +16,7 @@ struct RecipeAPI: RecipeAPIProtocol {
 	static let baseAPI = "https://themealdb.com/api/json/v1/1/"
 
 	private init() { }
-
+	
 	static let shared = RecipeAPI()
 
 	func getRecipes(forCategory category: String) async throws -> [Recipe] {

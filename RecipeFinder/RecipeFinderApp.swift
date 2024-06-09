@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct RecipeFinderApp: App {
-    var body: some Scene {
-        WindowGroup {
+	var body: some Scene {
+		WindowGroup {
 			ContentView(recipeAPI: RecipeAPI.shared)
-        }
-    }
+		}
+	}
 }

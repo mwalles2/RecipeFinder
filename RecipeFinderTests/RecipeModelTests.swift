@@ -9,8 +9,8 @@ import XCTest
 @testable import RecipeFinder
 
 final class RecipeModelTests: XCTestCase {
-
-    func testDecode() throws {
+	
+	func testDecode() throws {
 		guard let url = Bundle(for: RecipeModelTests.self).url(forResource: "TestRecipe", withExtension: "json") else {
 			XCTFail()
 			return
@@ -19,17 +19,17 @@ final class RecipeModelTests: XCTestCase {
 			XCTFail()
 			return
 		}
-
+		
 		guard let wrapper = try? JSONDecoder().decode(RecipeDetailWrapper.self, from: data) else {
 			XCTFail()
 			return
 		}
-
+		
 		guard let decodedRecipe = wrapper.meals.first else {
 			XCTFail()
 			return
 		}
-
+		
 		XCTAssertEqual(RecipeAPIMock.shared.testRecipe(), decodedRecipe)
-    }
+	}
 }

@@ -12,7 +12,7 @@ struct ContentView: View {
 	@State var recipes: [Recipe]? = nil
 	@State var errorMessage: String? = nil
 	let category = "Dessert"
-    var body: some View {
+	var body: some View {
 		NavigationStack {
 			if let recipes {
 				List {
@@ -26,23 +26,22 @@ struct ContentView: View {
 				.navigationTitle(category)
 			} else if let errorMessage {
 				VStack {
-				 Text("An error occured").font(.largeTitle)
-				 Text(errorMessage).font(.caption)
-				 Button {
-					 load()
-				 } label: {
-					 Text("Retry")
-				 }
-
-			 }
-		 } else {
+					Text("An error occured").font(.largeTitle)
+					Text(errorMessage).font(.caption)
+					Button {
+						load()
+					} label: {
+						Text("Retry")
+					}
+				}
+			} else {
 				LoadingView()
 			}
 		}.onAppear {
 			load()
 		}
 	}
-
+	
 	func load() {
 		Task {
 			recipes = nil
@@ -52,7 +51,7 @@ struct ContentView: View {
 					lhs.name < rhs.name
 				}
 			} catch {
-
+				
 				errorMessage = error.localizedDescription
 			}
 		}

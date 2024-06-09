@@ -9,19 +9,19 @@ import Foundation
 
 struct RecipeAPIMock: RecipeAPIProtocol {
 	private init() { }
-
+	
 	static let shared = RecipeAPIMock()
-
+	
 	func getRecipes(forCategory category: String) async throws -> [Recipe] {
 		return [Recipe(id: "52893",
-			  name: "Apple & Blackberry Crumble",
-			  thumbnailURL: "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"),
-		 Recipe(id: "52833",
-			  name: "Salted Caramel Cheescake",
-			  thumbnailURL: "https://www.themealdb.com/images/media/meals/xqrwyr1511133646.jpg"),
-		 Recipe(id: "52917",
-			  name: "White chocolate creme brulee",
-			  thumbnailURL: "https://www.themealdb.com/images/media/meals/uryqru1511798039.jpg")]
+					   name: "Apple & Blackberry Crumble",
+					   thumbnailURL: "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"),
+				Recipe(id: "52833",
+					   name: "Salted Caramel Cheescake",
+					   thumbnailURL: "https://www.themealdb.com/images/media/meals/xqrwyr1511133646.jpg"),
+				Recipe(id: "52917",
+					   name: "White chocolate creme brulee",
+					   thumbnailURL: "https://www.themealdb.com/images/media/meals/uryqru1511798039.jpg")]
 	}
 	
 	func getRecipe(forID id: String) async throws -> RecipeDetail {
@@ -39,17 +39,17 @@ struct RecipeAPIMock: RecipeAPIProtocol {
 							youtube: "https://www.youtube.com/watch?v=q5dQp3qpmI4",
 							ingredients: [Ingredient(name: "Digestive Biscuits", measurement: "250g"),
 										  Ingredient(name: "Pretzels", measurement: "75g"),
-							  Ingredient(name: "Butter", measurement: "135g"),
-							  Ingredient(name: "Cream Cheese", measurement: "450g"),
-							  Ingredient(name: "Vanilla Extract", measurement: "1tsp"),
-							  Ingredient(name: "Icing Sugar", measurement: "100g"),
-							  Ingredient(name: "Caramel", measurement: "150g"),
-							  Ingredient(name: "Sea Salt", measurement: "1tsp"),
-							  Ingredient(name: "Double Cream", measurement: "300ml"),
-							  Ingredient(name: "Caramel Sauce", measurement: "drizzle"),
-							  Ingredient(name: "Toffee Popcorn", measurement: "Top"),
-							  Ingredient(name: "Pretzels", measurement: "Top")],
+										  Ingredient(name: "Butter", measurement: "135g"),
+										  Ingredient(name: "Cream Cheese", measurement: "450g"),
+										  Ingredient(name: "Vanilla Extract", measurement: "1tsp"),
+										  Ingredient(name: "Icing Sugar", measurement: "100g"),
+										  Ingredient(name: "Caramel", measurement: "150g"),
+										  Ingredient(name: "Sea Salt", measurement: "1tsp"),
+										  Ingredient(name: "Double Cream", measurement: "300ml"),
+										  Ingredient(name: "Caramel Sauce", measurement: "drizzle"),
+										  Ingredient(name: "Toffee Popcorn", measurement: "Top"),
+										  Ingredient(name: "Pretzels", measurement: "Top")],
 							source: "http://www.janespatisserie.com/2015/11/09/no-bake-salted-caramel-cheesecake/")
-
+		
 	}
 }
