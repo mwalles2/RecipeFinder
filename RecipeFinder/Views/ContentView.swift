@@ -17,7 +17,10 @@ struct ContentView: View {
 			if let recipes {
 				List {
 					ForEach(recipes) { recipe in
-						NavigationLink(recipe.name, value: recipe.id)
+						NavigationLink(value: recipe.id) {
+							RecipeListLabelView(name: recipe.name,
+												url: recipe.thumbnailURL)
+						}
 					}
 				}
 				.navigationDestination(for: String.self) { textValue in

@@ -26,6 +26,7 @@
 		75B0D8712C1634F200A6A74B /* RecipeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0D8662C1634F200A6A74B /* RecipeWrapper.swift */; };
 		75B0D8722C1634F200A6A74B /* RecipeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0D8682C1634F200A6A74B /* RecipeAPI.swift */; };
 		75B0D8742C16350B00A6A74B /* RecipeAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0D8732C16350B00A6A74B /* RecipeAPIMock.swift */; };
+		75B0D8762C16390300A6A74B /* RecipeListLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0D8752C16390300A6A74B /* RecipeListLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		75B0D8662C1634F200A6A74B /* RecipeWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeWrapper.swift; sourceTree = "<group>"; };
 		75B0D8682C1634F200A6A74B /* RecipeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAPI.swift; sourceTree = "<group>"; };
 		75B0D8732C16350B00A6A74B /* RecipeAPIMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAPIMock.swift; sourceTree = "<group>"; };
+		75B0D8752C16390300A6A74B /* RecipeListLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				75B0D85E2C1634F200A6A74B /* DetailView.swift */,
 				75B0D85F2C1634F200A6A74B /* IngredientView.swift */,
 				75B0D8602C1634F200A6A74B /* LoadingView.swift */,
+				75B0D8752C16390300A6A74B /* RecipeListLabelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				75B0D86A2C1634F200A6A74B /* DetailView.swift in Sources */,
 				75B0D86D2C1634F200A6A74B /* Ingredient.swift in Sources */,
 				758BB57B2C13997400539168 /* RecipeFinderApp.swift in Sources */,
+				75B0D8762C16390300A6A74B /* RecipeListLabelView.swift in Sources */,
 				75B0D86B2C1634F200A6A74B /* IngredientView.swift in Sources */,
 				75B0D8722C1634F200A6A74B /* RecipeAPI.swift in Sources */,
 				75B0D8692C1634F200A6A74B /* ContentView.swift in Sources */,
